@@ -1,7 +1,7 @@
 import streamlit as st
 import hashlib
 from cryptography.fernet import Fernet
-
+s
 # Generate key (you can replace this with a hardcoded key if you want persistence)
 if "fernet_key" not in st.session_state:
     st.session_state.fernet_key = Fernet.generate_key()
