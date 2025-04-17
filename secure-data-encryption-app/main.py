@@ -77,7 +77,7 @@ elif choice == "Retrieve Data":
             stored = st.session_state.stored_data[label]
             if hash_passkey(passkey) == stored["passkey"]:
                 decrypted = decrypt_text(stored["encrypted_text"])
-                st.success(f"🔓 Decrypted Data:{decrypted}")
+                st.success(f"🔓 Decrypted Data: {decrypted}")
                 reset_attempts()
             else:
                 st.session_state.failed_attempts += 1
